@@ -1,15 +1,11 @@
-# QDD-Ens: Quantization-based Deep Diversified Ensemble for Biomedical Image Segmentation
-
+# D2ED2Q: Deep Diversified Ensemble with Deep Diversified Quantization for Efficient Medical Image Segmentation in Internet of Medical Things
 ![111](./111.png)
 
 
 
 **Abstract**:
 
-*Biomedical image segmentation plays a central role in quantitative analysis, clin ical diagnosis, and medical intervention. Recently, fully convolutional networks  (FCNs) have boosted its performance by efficiently exploiting multi-scale contex tual information. Meanwhile, the ensemble method is usually further adopted to enhance performance. However, it only fuses the outputs of individual FCNs and  ignores the internal multi-scale feature interaction among these FCNs. Here, we  argue that current ensemble methods may not fully exploit the potential of the  rich multi-scale feature and ensemble diversity among FCNs. In this paper, we  propose the quantization-based multi-scale ensemble network (QME-Net) by using a meta learner to fuse features at multiple resolution levels from base learners,  with a large ensemble diversity gain from two optimizations. The first adopts  diverse network quantization as a strict constraint to produce a variety of learners owning comparable performance with high diversity. The second is a new loss  function, deep diversity loss, which can enlarge the ensemble diversity among FCNs in a deep supervision way. We conducted comprehensive experiments cross four widely-used FCNs and three public biomedical segmentation datasets, and the  results show that our method can effectively improve the segmentation accuracy.*
-
-
-
+*Internet of Medical Things (IoMT) is emerging to revolutionize the clinical practice, and medical image segmentation has been one of the most critical tasks in the automatic processing of medical images in IoMT. Recently, deep convolutional neural networks (CNNs) have boosted the performance of medical image segmentation, and ensemble methods are usually further adopted to enhance the performance. However, ensemble methods always incur a substantial increase in computational cost, which is unable to meet the high efficiency standard typically required in IoMT.In this paper, we propose deep diversified ensemble with deep diversified quantization (D2ED2Q) for efficient medical image segmentation in IoMT. First, deep ensemble is used to perform ensemble in a much deeper manner, i.e., an meta learner is employed to fuse the internal features at multiple resolution levels from multiple base learners, which are directly diversified by the proposed deep diversified loss. Then, deep diversified quantization  employs a two-stage partition to eliminate the accuracy loss and increase the randomness of the weights during quantization, which eliminates the notoriously high computational expense of ensemble methods without accuracy loss. We have conducted extensive experiments across four public medical image segmentation datasets, and the experimental results show that our method can effectively improve the segmentation accuracy and outperform the state-of-the-art ensemble methods with reduced computational cost.
 
 
 ## Requirements
