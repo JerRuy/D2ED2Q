@@ -21,7 +21,7 @@ and the requirements highlighted in [requirements.txt](./requirements.txt) (for 
 
 ## Training
 
-To train the CE-Net based QME-Net with default setting in the paper on DRIVE dataset, run this command:
+To train the CE-Net based D2ED2Q with default setting in the paper on DRIVE dataset, run this command:
 
 ```train
 python train.py --backbone CE-Net --dataset DRIVE --alpha 0.005 --epoch 1200 -- epochQ 300 --batchsize 4
@@ -34,7 +34,7 @@ python train.py --backbone CE-Net --dataset DRIVE --alpha 0.005 --epoch 1200 -- 
 To evaluate my model on DRIVE dataset, run this command:
 
 ```eval
-python eval.py --model-path QME-Net_DRIVE.pth 
+python eval.py --model-path D2ED2Q_DRIVE.pth 
 ```
 
 
